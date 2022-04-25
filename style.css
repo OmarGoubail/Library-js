@@ -1,0 +1,77 @@
+
+:root{
+
+    --purple : #B48EAD;
+    --light-blue : #5E81AC;
+    --orange : #D08770;
+    --sky-blue : #8FBCBB;
+    --bluish-grey : #3B4252;
+    --yellow : #EBCB8B;
+    --dark : #2E3440;
+}
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+
+    background-color: var(--dark);
+}
+.header{
+    display: flex;
+    /* border: 3px solid ; */
+    /* height: 100px; */
+    background-color: var(--bluish-grey);
+    
+}
+.head{
+    font-size: 32px;
+    font-weight: 900;
+    margin: 24px;
+    color: var(--yellow);
+}
+
+.book_form{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+    pointer-events: none;
+    /* transition: opacity 0.3s ease-in-out; */
+}
+
+.show_book_form {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.close_btn {
+    
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
