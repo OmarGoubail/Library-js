@@ -8,15 +8,19 @@
     --bluish-grey : #3B4252;
     --yellow : #EBCB8B;
     --dark : #2E3440;
+    --white: #ffffff;
+    --light-gold: #f4f1ea;
+    --brown-text: #463020;
+
+    
 }
 
 
 
-
-
-
-
-
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
 
 
 * {
@@ -27,35 +31,65 @@
 
 
 body{
-
-    background-color: var(--dark);
+    
+    background-color: var(--white);
 }
 .header{
     display: flex;
     /* border: 3px solid ; */
     /* height: 100px; */
-    background-color: var(--bluish-grey);
-    
+    background-color: var(--light-gold);
+    box-shadow: 0.5px 0.5px 0.5px var(--brown-text);    
 }
 .head{
     font-size: 32px;
     font-weight: 900;
-    margin: 24px;
-    color: var(--yellow);
+    margin: 28px;
+    color: var(--brown-text);
 }
 
+
+.add_btn{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+.btn{
+    border: #d6d0c4;
+    color: var(--brown-text);
+    background-color: var(--light-gold);
+    border-radius: 12px;
+    padding: 15px 32px;
+    position: absolute;
+    
+    place-self: center;
+    
+
+
+}
 .book_form{
     position: absolute;
-    height: 100%;
-    width: 100%;
+    top: 30%;
+    left: 40%;
+    
     opacity: 0;
     display: flex;
+
     place-items: center;
     justify-content: center;
     flex-direction: column;
     pointer-events: none;
     /* transition: opacity 0.3s ease-in-out; */
+    background-color: var(--light-gold);
+    padding: 2rem;
+    border-radius: 8px;
 }
+
+.check_box{
+    display: flex;
+    justify-content:space-around;
+}
+
 
 .show_book_form {
   opacity: 1;
@@ -73,5 +107,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 8px;
+   
     
 }

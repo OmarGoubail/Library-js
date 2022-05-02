@@ -17,7 +17,11 @@
         <header class="head">Library</header>
     </div>
 
+    <div class="add_btn">
    <button id="add_book_btn" class="btn">Add book</button> 
+
+   </div>
+   
    <div class="book_form">
        
         <button id="close_form_btn" class="close_btn">X</button>
@@ -29,10 +33,14 @@
             <input type="text" id="book author" name="author" placeholder="Author">
 
             <label for="pages"></label>
-            <input type="number" id="book pages" name="pages" placeholder="Pages">
+            <input type="number" id="book pages" name="pages" placeholder="Pages" max=10000>
 
+            <div class="check_box">
             <label for="reading_status">Have you read it?</label>
-            <input type="checkbox" id="book reading_status" name="reading_status" value='read' max=10000>
+            <input type="checkbox" id="book reading_status" name="reading_status" value='read'>
+
+            </div>
+            
        </form>
             <button id="submit_book_btn">Add</button>
    </div>
